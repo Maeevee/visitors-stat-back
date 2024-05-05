@@ -10,4 +10,6 @@ app.use(express.json())
 
 app.post('/log', logRouter)
 
+app.get('/log', logRouter)
+
 module.exports = app
