@@ -8,8 +8,6 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-app.post('/log', logRouter)
-
-app.get('/log', logRouter)
+app.use('/log', logRouter)
 
 module.exports = app
